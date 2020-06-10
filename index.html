@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav id="overlay">
+        <img src="image/close.svg" class="close-btn" id="close-menu">
+        <ul>
+            <li>
+                <a href="#">Projects</a>
+                <span>Details about my projects.</span>
+            </li>
+            <li>
+                <a href="#">About Me</a>
+                <span>Details about me.</span>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <a href="#" class="logo">Prototype</a>
+        <img src="image/option.svg" class="menu-btn" id="open-menu">
+    </header>
+    <section>
+        <h1>INITIAL PROTOTYPE</h1>
+    </section>
+    <script>
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+        document.getElementById('open-menu').addEventListener('click', function(){
+            overlay.classList.add('show-menu');
+            }
+        );
+
+        document.getElementById('close-menu').addEventListener('click', function(){
+            overlay.classList.remove('show-menu');
+            }
+        );
+    </script>
+</body>
+</html>
